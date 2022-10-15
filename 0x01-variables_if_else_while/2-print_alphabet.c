@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	ch = 'a';
+	char ch = 'a';
 
-	while (ch < 'z')
-		printf("%c", ch);
+	while (ch <= 'z')
+		putchar(ch);
 		ch++;
 	printf("\n");
 }
