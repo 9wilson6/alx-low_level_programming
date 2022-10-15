@@ -1,11 +1,11 @@
-#include <std.io>
+#include <stdio.h>
 
 
 /**
  *  main - print numbers of base 16
  *  Return: 0 for successful run
  */
- int main(void)
+int main(void)
 {
 	int num;
 	char ch;
