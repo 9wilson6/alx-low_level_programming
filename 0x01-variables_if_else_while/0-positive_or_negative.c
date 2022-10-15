@@ -4,22 +4,25 @@
 
 /* more headers goes there */
 
+#include <stdio.h>
 
-
-/* betty style doc for function main goes there */
+/**
+ * * main - generates a random number everytime it excutes
+ * * compares the numbr against 0 and prints the outcome
+ * Return: Zero for successful compilation
+ */
 
 int main(void)
-
 {
 	int n;
-	srand(time(0));	
-	n = rand() - RAND_MAX / 2;
-	if(n>0)
-		printf("%d is positive\n," n);
-	else if(n==0)
-		printf("%d is zero\n", n);
-	else if(n<0)
-		printf("%d is negative\n",n);
-	return (0);
 
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	return (0);
 }
