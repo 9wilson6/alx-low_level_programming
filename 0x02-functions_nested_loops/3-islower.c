@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * int _islower - check if character is lowercase
+ * _islower - check if character is lowercase
+ * @c: the character under scrutny
  * Return: 1 if is lower otherwise 0
  */
 
