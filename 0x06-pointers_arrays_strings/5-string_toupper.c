@@ -4,7 +4,7 @@
  * string_toupper  - change lowecase letters to uppercase
  * @s: string to modify
  * Return: the resulting string
- * Return: the resulting string
+ * 
  */
 char *string_toupper(char *s)
 {
