@@ -12,7 +12,10 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num;
 
 	if (!b || !*b)
+	{
 		return (0);
+	}
+
 	num = i = 0;
 
 	while (b[i])
