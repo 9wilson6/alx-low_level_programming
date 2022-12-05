@@ -1,22 +1,15 @@
 #include "main.h"
-#include <limits.h>
+
 
 
 /**
- * get_bit - function that returns the value of a bit at a given index.
- * @n: number to scan.
- * @index: bit to return.
- * Return: Bit (0 | 1)
+ * print_binary - representation of a number.
+ * @n: number to convert into binary representation
  */
 
-int get_bit(unsigned long int n, unsigned int index)
+void print_binary(unsigned long int n)
 {
-	int bit;
-	
-	bit = ((n >> index) & 1);
-	if (index > 64)
-	{
-		return (-1);
-	}
-	return (bit);
+	if (n > 1)
+		print_binary(n >> 1);
+	_putchar((n & 1) + '0');
 }
